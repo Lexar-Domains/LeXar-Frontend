@@ -4,10 +4,14 @@ import { getDefaultWallets } from '@rainbow-me/rainbowkit';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { gnosisChiado } from '@wagmi/core/chains';
 import { publicProvider } from 'wagmi/providers/public';
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import {
+  RainbowKitProvider,
+  connectorsForWallets,
+} from '@rainbow-me/rainbowkit';
 import '@rainbow-me/rainbowkit/styles.css';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import merge from 'lodash.merge';
+
 // import { DomainContextProvider } from "@/context/context";
 
 const { provider, chains } = configureChains(
@@ -20,6 +24,21 @@ const { provider, chains } = configureChains(
     }),
   ]
 );
+
+// const connectors = connectorsForWallets([
+//   {
+//     groupName: 'Recommended',
+//     wallets: [
+//       BananaWallet({
+//         chains,
+//         connect: {
+//           networkId: 80001,
+//         },
+//       }),
+//       ...otherRainbowKitWallets,
+//     ],
+//   },
+// ]);
 
 const { connectors } = getDefaultWallets({
   appName: 'LeXar',

@@ -82,7 +82,7 @@ const AccountHeader2 = () => {
               </span>
               <span className="bg-white p-2 roun text-black rounded-r-lg font-bold">
                 {/* {userDefault} */}
-                ghost.xdai
+                {userDefault}
               </span>{' '}
             </p>
 
