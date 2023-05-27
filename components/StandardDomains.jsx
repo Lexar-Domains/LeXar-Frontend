@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import DomainCard from "./DomainCard";
-import domainResolverAbi from "../abi/lexarDomainResolver.json";
-import lexarDomainAbi from "../abi/lexarDomainABI.json";
-import DomainSkeleton from "../components/skeleton/DomainSkeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-import { ethers } from "ethers";
-import { useAccount } from "wagmi";
-import { config } from "../abi";
-import { MdHourglassEmpty } from "react-icons/md";
+import { useState, useEffect } from 'react';
+import DomainCard from './DomainCard';
+import domainResolverAbi from '../abi/lexarDomainResolver.json';
+import lexarDomainAbi from '../abi/lexarDomainABI.json';
+import DomainSkeleton from '../components/skeleton/DomainSkeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import { ethers } from 'ethers';
+import { useAccount } from 'wagmi';
+import { config } from '../abi';
+import { MdHourglassEmpty } from 'react-icons/md';
 
 const StandardDomains = () => {
   const { address } = useAccount();
@@ -28,7 +28,7 @@ const StandardDomains = () => {
 
     const defaultDomain = await domainResolver.getDefaultDomains(address);
 
-    const defaultDomainArr = defaultDomain.split(" ");
+    const defaultDomainArr = defaultDomain.split(' ');
 
     const domainDetails = await getDefaultDomains(defaultDomainArr);
 
@@ -47,21 +47,21 @@ const StandardDomains = () => {
   const getDefaultDomains = async (defaultDomains) => {
     let domainDetailsArr = [];
     let defaultDomainLength;
-    if (defaultDomains[defaultDomains.length - 1] === "") {
+    if (defaultDomains[defaultDomains.length - 1] === '') {
       defaultDomainLength = defaultDomains.length - 1;
     } else {
       defaultDomainLength = defaultDomains.length;
     }
     for (let i = 0; i < defaultDomainLength; i++) {
       let domainDetails = {
-        domainName: "",
-        tld: "",
+        domainName: '',
+        tld: '',
       };
       const domain = defaultDomains[i];
       // console.log(domain);
-      const splitArr = domain.split(".");
+      const splitArr = domain.split('.');
       const domainName = splitArr[0];
-      const tld = "." + splitArr[1];
+      const tld = '.' + splitArr[1];
 
       domainDetails.domainName = domainName;
       domainDetails.tld = tld;
@@ -85,9 +85,9 @@ const StandardDomains = () => {
     let domainDetails = [];
     for (let i = 0; i < domainDetailsArr.length; i++) {
       let newDomainDetails = {
-        domainName: "",
-        tld: "",
-        image: "",
+        domainName: '',
+        tld: '',
+        image: '',
       };
       const domainDetail = domainDetailsArr[i];
 
@@ -131,14 +131,16 @@ const StandardDomains = () => {
           ))}
       </div>
 
-      <div className={res ? "block" : "hidden ml-[300px]"}>
-        <div className="h-screen mx-[200px] mt-6">
-          <p className="text-white text-center ml-[280px] py-[80px] bg-black-gradient rounded-xl text-2xl rex2 flex flex-col items-center">
-            <MdHourglassEmpty className="text-[60px]" />
-            You currently have no domains
-          </p>
+      {!loading && res && (
+        <div className="ml-[300px]">
+          <div className="h-screen mx-[200px] mt-6">
+            <p className="text-white text-center ml-[280px] py-[80px] bg-black-gradient rounded-xl text-2xl rex2 flex flex-col items-center">
+              <MdHourglassEmpty className="text-[60px]" />
+              You currently have no domains
+            </p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

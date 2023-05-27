@@ -12,6 +12,7 @@ import {
   MdOutlineSettings,
   MdOutlineLogout,
 } from 'react-icons/md';
+import { FiUpload } from 'react-icons/fi';
 
 const Sidebar = () => {
   const router = useRouter();
@@ -45,6 +46,48 @@ const Sidebar = () => {
               </span>
             </Link>
           ))}
+          <Link href="/integration" scroll={false}>
+            <span
+              className={`font-poppins flex items-center font-normal cursor-pointer text-[16px]  ${
+                router.pathname === '/integration'
+                  ? 'text-white font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 px-6 rounded-md transition-all duration-500'
+                  : 'text-secondary-white px-2 ml-4 hover:opacity-80'
+              } `}
+            >
+              <div className="text-[20px]">
+                <MdOutlineIntegrationInstructions />
+              </div>
+              &nbsp;&nbsp;
+              <div className="flex items-center">
+                <p>Integrations</p>
+                &nbsp; &nbsp;
+                <span className="text-[12px] p-[4px] bg-purple-600 rounded-lg">
+                  coming
+                </span>
+              </div>
+            </span>
+          </Link>
+          <Link href="/send-tokens" scroll={false}>
+            <span
+              className={`font-poppins flex items-center font-normal cursor-pointer text-[16px]  ${
+                router.pathname === '/send-tokens'
+                  ? 'text-white font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 px-6 rounded-md transition-all duration-500'
+                  : 'text-secondary-white px-2 ml-4 hover:opacity-80'
+              } `}
+            >
+              <div className="text-[20px]">
+                <FiUpload />
+              </div>
+              &nbsp;&nbsp;
+              <div className="flex items-center">
+                <p>Send Tokens</p>
+                &nbsp; &nbsp;
+                <span className="text-[12px] p-[4px] bg-purple-600 rounded-lg">
+                  coming
+                </span>
+              </div>
+            </span>
+          </Link>
           <li className="flex flex-col ml-6 mt-14">
             <span className="flex items-center text-secondary-white">
               {' '}

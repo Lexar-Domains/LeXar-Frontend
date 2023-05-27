@@ -120,14 +120,14 @@ export const navigation = [
     href: '/lookup',
     icon: <BsSearch />,
   },
-  {
-    name: 'Integration',
-    href: '/integration',
-    icon: <MdOutlineIntegrationInstructions />,
-  },
-  {
-    name: 'Send Tokens',
-    href: '/send-tokens',
-    icon: <FiUpload />,
-  },
+  // {
+  //   name: 'Integration',
+  //   href: '/integration',
+  //   icon: <MdOutlineIntegrationInstructions />,
+  // },
+  // {
+  //   name: 'Send Tokens',
+  //   href: '/send-tokens',
+  //   icon: <FiUpload />,
+  // },
 ];
