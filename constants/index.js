@@ -56,15 +56,21 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: '/planet-06.png',
-    title: 'Personalized Domain Data',
+    title: 'No Coding Required',
     subtitle:
-      'Users can add custom data to their domain (example "profile picture(an address and token ID of an NFT), description, social media links").',
+      "LeXar's intuitive interface allows users to create and manage dTLDs without any programming knowledge. Simply follow the step-by-step process to set up your custom domain on the Gnosis blockchain.",
   },
   {
     imgUrl: '/planet-07.png',
-    title: 'Sharable Link',
+    title: 'Community Empowerment',
     subtitle:
-      'After creating a top level domain (example ".tld"), creators can send the link to a domain minting page to members of their community',
+      'Lexar Domains enable communities to establish their own unique online identity, fostering collaboration, communication, and growth. By creating a dTLD, communities can build a decentralized ecosystem that reflects their values and goals.',
+  },
+  {
+    imgUrl: '/planet-07.png',
+    title: 'Seamless Integration',
+    subtitle:
+      'Lexar Domains empowers seamless integration of dTLDs with diverse decentralized applications and services on the Gnosis blockchain, fostering an interconnected ecosystem.',
   },
   // {
   //   imgUrl: "/planet-08.png",

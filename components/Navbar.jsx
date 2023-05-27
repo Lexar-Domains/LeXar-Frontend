@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
-import { SiHiveBlockchain } from "react-icons/si";
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
+import { SiHiveBlockchain } from 'react-icons/si';
 
 const Navbar = () => (
   <motion.nav
@@ -26,7 +26,7 @@ const Navbar = () => (
         <li>Resources</li>
         <li>Community</li>
       </ul>
-      <button className="bg-indigo-500 p-2 text-white rounded-[10px] font-bold">
+      <button className="bg-purple-600 p-2 text-white rounded-[10px] font-bold">
         <a href="/dashboard" target="_blank">
           Launch App
         </a>
