@@ -4,6 +4,9 @@ LeXar Domains is a decentralized application (dApp) that empowers communities to
 
 LeXar is designed to provide an intuitive, user-friendly interface that simplifies the process of creating and managing dTLDs, making it accessible to everyone, regardless of their technical background.
 
+## Links
+[Website](https://lexar-frontend.vercel.app/) | [Documentation](https://lexar-domains.gitbook.io/introduction/introduction/introduction)
+
 ## Smart Contract Links
 - Metadata Address: https://blockscout.chiadochain.net/address/0xf7227a4251cB576eA97411921431415a3D4e7Fa8
 - Forbidden TLDS: https://blockscout.chiadochain.net/address/0xa41479c683B534712b4a1686e545160E7710f4be
@@ -19,16 +22,22 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
    - On the Mint Domain Page, an Ethers.js JsonRpcProvider instance is created to connect to the Gnosis Chiado testnet via the Gateway.fm RPC service. This provider will be used later in the function to interact with smart contracts and retrieve the TLD price for each available domain.
 
  ### Gnosis Chiado Chain
-   - *Testing and development environment*: The Gnosis Chiado testnet was a safe and cost-effective environment for testing and developing the smart contracts powering the LeXar Dapp.
-   - Community engagement and feedback: We were able to engage with the developer community and gather valuable feedback. By making LeXar dApp accessible on the Gnosis Chiado testnet, we provided other developers and users with the opportunity to interact with LeXar, test its features, and provide suggestions for improvements.
-
-## Links
-[Website](https://lexar-frontend.vercel.app/) | [Documentation](https://lexar-domains.gitbook.io/introduction/introduction/introduction)
+   - **Testing and development environment**: The Gnosis Chiado testnet was a safe and cost-effective environment for testing and developing the smart contracts powering the LeXar Dapp.
+   - **Community engagement and feedback**: We were able to engage with the developer community and gather valuable feedback. By making LeXar dApp accessible on the Gnosis Chiado testnet, we provided other developers and users with the opportunity to interact with LeXar, test its features, and provide suggestions for improvements.
 
 ## Features
 ### - Create Domain
 ![gitbook2](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/6e955d64-cc38-4c44-a8e4-f89dcd6c42c0)
 
 ![gitbook3](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/08b69749-4568-49d2-98ea-d0d1e6997764)
+
+### Mint Type
+![minter](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/e291c917-d42a-47d4-a8e1-916e035e6c39)
+*User gets to select the minting page they want to access
+
+### Domain Mint Page
+![gitbook5](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/454f261f-3a6e-4507-be91-759947707eff)
+
+
 
 
