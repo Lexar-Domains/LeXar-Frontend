@@ -19,13 +19,17 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 ## Sponsor's Tech Used
  ### Gateway.fm RPC: 
    - The Lexar is powered by multiple smart contracts, which were deployed using the Gateway.fm RPC provider. 
-   - On the Mint Domain Page, an Ethers.js JsonRpcProvider instance is created to connect to the Gnosis Chiado testnet via the Gateway.fm RPC service. This provider will be used later in the function to interact with smart contracts and retrieve the TLD price for each available domain.
+   - On the Mint Domain Page, an Ethers.js JsonRpcProvider instance is created to connect to the Gnosis Chiado testnet via the Gateway.fm RPC service. This provider is used in the function to interact with smart contracts and retrieve the TLD price for each available domain.
 
  ### Gnosis Chiado Chain
    - **Testing and development environment**: The Gnosis Chiado testnet was a safe and cost-effective environment for testing and developing the smart contracts powering the LeXar Dapp.
    - **Community engagement and feedback**: We were able to engage with the developer community and gather valuable feedback. By making LeXar dApp accessible on the Gnosis Chiado testnet, we provided other developers and users with the opportunity to interact with LeXar, test its features, and provide suggestions for improvements.
 
 ## Features
+### Dashboard
+![dash2](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/f0f43031-a170-4915-8667-e98b97fbb4f1)
+
+
 ### - Create Domain
 ![gitbook2](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/6e955d64-cc38-4c44-a8e4-f89dcd6c42c0)
 
@@ -33,10 +37,15 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 
 ### Mint Type
 ![minter](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/e291c917-d42a-47d4-a8e1-916e035e6c39)
-*User gets to select the minting page they want to access
+*User gets to select the minting page they want to access*
 
 ### Domain Mint Page
 ![gitbook5](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/454f261f-3a6e-4507-be91-759947707eff)
+
+### Domain Lookup Page
+![lookup](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/3b2b87c3-4ddd-42db-a265-a7c1ef5e9175)
+*User can check basic details about any domain address created using LeXar*
+
 
 
 
