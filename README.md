@@ -41,6 +41,8 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 
 ### Domain Mint Page
 ![gitbook5](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/454f261f-3a6e-4507-be91-759947707eff)
+*After creating a domain, user can visit the domain mint page to mint their domain name.*
+*A list of available tlds is populated as options on the form*
 
 ### Domain Lookup Page
 ![lookup](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/3b2b87c3-4ddd-42db-a265-a7c1ef5e9175)
