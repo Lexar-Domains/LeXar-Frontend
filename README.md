@@ -12,3 +12,9 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 - SBT Domain Factory: https://blockscout.chiadochain.net/address/0x1B8b78c884Caa7D7523FE8669768Bfe07b40f770
 - Domain Resolver: https://blockscout.chiadochain.net/address/0xdcDF99A8FeC1102AdeA84c4087224Ef2d6BF8B27
 - Sbt Resolver: https://blockscout.chiadochain.net/address/0x86e284Ef6002A6f79fc6715303743d48cDB5cf73
+
+## Links
+[Website](https://lexar-frontend.vercel.app/) | [Documentation](https://lexar-domains.gitbook.io/introduction/introduction/introduction)
+
+## Features
+- Create Domain
