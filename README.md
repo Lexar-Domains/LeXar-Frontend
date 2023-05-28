@@ -48,6 +48,16 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 ![lookup](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/3b2b87c3-4ddd-42db-a265-a7c1ef5e9175)
 *User can check basic details about any domain address created using LeXar*
 
+## Unfinished Features
+![transfer](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/60489bbb-6f0d-489c-af86-5437d53c8f86)
+*User would be able to transfer their **Standard** domain ownership to a completely different address*
+
+![update](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/fa1f2226-f65d-41e1-875c-3d3ab61c8bbe)
+*User would be able to save metadata components to their created domain*
+
+**NOTE** Functionality is already built at the smart contract level, but yet to be implemented in UI
+
+
 
 
 
