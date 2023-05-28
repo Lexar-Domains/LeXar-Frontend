@@ -132,7 +132,7 @@ const StandardDomains = () => {
       </div>
 
       {!loading && res && (
-        <div className="ml-[300px]">
+        <div className="ml-[20px]">
           <div className="h-screen mx-[200px] mt-6">
             <p className="text-white text-center ml-[280px] py-[80px] bg-black-gradient rounded-xl text-2xl rex2 flex flex-col items-center">
               <MdHourglassEmpty className="text-[60px]" />

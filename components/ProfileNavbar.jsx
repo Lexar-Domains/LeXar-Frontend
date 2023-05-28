@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import styles from "../styles";
-import { SiReactivex } from "react-icons/si";
-import { MdOutlineNotificationsNone } from "react-icons/md";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { ethers } from "ethers";
-import { config } from "@/abi";
-import domainResolverAbi from "../abi/lexarDomainResolver.json";
-import { useAccount } from "wagmi";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { useState, useEffect } from 'react';
+import styles from '../styles';
+import { SiReactivex } from 'react-icons/si';
+import { MdOutlineNotificationsNone } from 'react-icons/md';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ethers } from 'ethers';
+import { config } from '@/abi';
+import domainResolverAbi from '../abi/lexarDomainResolver.json';
+import { useAccount } from 'wagmi';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 
 const ProfileNavbar = () => {
   const { address, isConnected } = useAccount();
@@ -40,9 +40,20 @@ const ProfileNavbar = () => {
     >
       {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
       <div
-        className={`${styles.innerWidth} mx-auto flex justify-end items-center gap-3`}
+        className={`${styles.innerWidth} mx-auto flex justify-center items-center gap-3`}
       >
-        <form className="w-1/2">
+        <ul>
+          <li className="flex gap-4 mr-12 text-gray-300">
+            <a href="/dashboard">Home</a>
+            <a
+              href="https://lexar-domains.gitbook.io/introduction/introduction/introduction"
+              target="_blank"
+            >
+              Docs
+            </a>
+          </li>
+        </ul>
+        <form className="w-[40%]">
           <label
             htmlFor="default-search"
             className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -95,7 +106,8 @@ const ProfileNavbar = () => {
           />
           &nbsp; {userDefault}
         </button>
-        <div className="gradi p-2 pr-10 text-white rounded-[10px] font-bold">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div className="gradi p-2 pr-2 text-white rounded-[10px] font-bold">
           <ConnectButton showBalance={false} />
         </div>
       </div>

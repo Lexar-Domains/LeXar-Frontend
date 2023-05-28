@@ -22,9 +22,21 @@ const Navbar = () => (
         </h2>
       </div>
       <ul className="hidden md:flex flex items-center gap-8 text-white font-semibold">
-        <li>Developers</li>
-        <li>Resources</li>
-        <li>Community</li>
+        <li className="z-[99]">
+          <a href="https://lexar-domains.gitbook.io/introduction/introduction/introduction">
+            Developers
+          </a>
+        </li>
+        <li className="z-[99]">
+          <a href="https://lexar-domains.gitbook.io/introduction/introduction/introduction">
+            Resources
+          </a>
+        </li>
+        <li>
+          <a href="https://lexar-domains.gitbook.io/introduction/introduction/introduction">
+            Community
+          </a>
+        </li>
       </ul>
       <button className="bg-purple-600 p-2 text-white rounded-[10px] font-bold">
         <a href="/dashboard" target="_blank">

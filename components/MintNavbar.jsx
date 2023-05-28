@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
-import { SiHiveBlockchain } from "react-icons/si";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Link from "next/link";
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
+import { SiHiveBlockchain } from 'react-icons/si';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import Link from 'next/link';
 
 const MintNavbar = () => (
   <motion.nav
@@ -26,9 +26,21 @@ const MintNavbar = () => (
         </div>
       </Link>
       <ul className="hidden md:flex flex items-center gap-8 text-white font-semibold cursor-pointer">
-        <li>Developers</li>
-        <li>Resources</li>
-        <li>Community</li>
+        <li>
+          <a href="https://lexar-domains.gitbook.io/introduction/introduction/introduction">
+            Developers
+          </a>
+        </li>
+        <li>
+          <a href="https://lexar-domains.gitbook.io/introduction/introduction/introduction">
+            Resources
+          </a>
+        </li>
+        <li>
+          <a href="https://lexar-domains.gitbook.io/introduction/introduction/introduction">
+            Community
+          </a>
+        </li>
       </ul>
 
       <ConnectButton showBalance={false} />
