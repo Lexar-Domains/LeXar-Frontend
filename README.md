@@ -22,35 +22,39 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 
 ## Features
 ### Dashboard
-![dash2](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/f0f43031-a170-4915-8667-e98b97fbb4f1)
-
+![Capture](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/f989ff24-d889-43f4-ac21-123f8cf0cefb)
 
 ### - Create Domain
-![gitbook2](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/6e955d64-cc38-4c44-a8e4-f89dcd6c42c0)
+![create](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/e4321c3e-54be-4553-b4fc-a3206b356bfd)
 
-![gitbook3](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/08b69749-4568-49d2-98ea-d0d1e6997764)
+![create2](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/b79f1035-a481-4cf6-b4dd-9c36d23b076c)
+
 
 ### Mint Type
-![minter](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/e291c917-d42a-47d4-a8e1-916e035e6c39)
+![minter](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/24b03313-9b2a-4f7c-bbdd-875bda61336b)
+
 *User gets to select the minting page they want to access*
 
 ### Domain Mint Page
-![gitbook5](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/454f261f-3a6e-4507-be91-759947707eff)
+![mint-domain](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/ce7440e4-612b-42d4-8038-75de534af9e7)
+
 *After creating a domain, user can visit the domain mint page to mint their domain name.*
 *A list of available tlds is populated as options on the form*
 
 ### Domain Lookup Page
-![lookup](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/3b2b87c3-4ddd-42db-a265-a7c1ef5e9175)
+![lookup](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/9edb75e9-2c18-4728-8756-9d72e4d2d36d)
+
 *User can check basic details about any domain address created using LeXar*
 
-## Unfinished Features
-![transfer](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/60489bbb-6f0d-489c-af86-5437d53c8f86)
+### Transfer Modal
+![transfer](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/6d46dad5-9f18-41fe-a75c-d4f06cf23d08)
+
 *User would be able to transfer their **Standard** domain ownership to a completely different address*
 
-![update](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/fa1f2226-f65d-41e1-875c-3d3ab61c8bbe)
+![update-metadata](https://github.com/Lexar-Domains/LeXar-Frontend/assets/42726051/aa51e68d-b0d5-4271-958d-da806b95c0dc)
+
 *User would be able to save metadata components to their created domain*
 
-**NOTE** Functionality is already built at the smart contract level, but yet to be implemented in UI
 
 
 
