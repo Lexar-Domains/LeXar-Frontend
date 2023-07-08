@@ -151,7 +151,7 @@ const CreateStaModal = ({ visible, onClose }) => {
                     <input
                       type="text"
                       className="border text-sm border-secondary-white  text-gray-900 placeholder-gray-700  bg-secondary-white p-2 rounded mb-5"
-                      placeholder='Domain symbol (i.e "xDAI", "XAR")'
+                      placeholder='Domain symbol (i.e "ETH", "XAR")'
                       required
                       // defaultValue={symbol}
                       onChange={(e) => setSymbol(e.target.value)}

@@ -159,7 +159,7 @@ const SbtMinter = () => {
         </div>
 
         <p className="text-white font-bold text-center mb-4">
-          Domain Price: {selectTldPrice} xDAI
+          Domain Price: {selectTldPrice} ETH
         </p>
 
         <ConfirmationModal

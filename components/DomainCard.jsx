@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
-import { useAccount } from "wagmi";
-import { config } from "@/abi";
-import { ethers } from "ethers";
-import domainResolverAbi from "../abi/lexarDomainResolver.json";
-import "react-toastify/dist/ReactToastify.css";
-import UpdateMetadata from "./modals/UpdateMetadata";
-import TransferDomain from "./modals/TransferDomain";
-import { formatCard } from "@/utils/formatCard";
+import { useEffect, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import { useAccount } from 'wagmi';
+import { config } from '@/abi';
+import { ethers } from 'ethers';
+import domainResolverAbi from '../abi/lexarDomainResolver.json';
+import 'react-toastify/dist/ReactToastify.css';
+import UpdateMetadata from './modals/UpdateMetadata';
+import TransferDomain from './modals/TransferDomain';
+import { formatCard } from '@/utils/formatCard';
 
 // const image =
 //   "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8&w=1000&q=80";
@@ -19,7 +19,7 @@ import { formatCard } from "@/utils/formatCard";
 const DomainCard = ({ domainName, tld, image }) => {
   const [openMintModal, setOpenMintModal] = useState(false);
   const [openTransferModal, setOpenTransferModal] = useState(false);
-  const [tldAddress, setTldAddress] = useState("");
+  const [tldAddress, setTldAddress] = useState('');
 
   const handleMintOnClose = () => setOpenMintModal(false);
   const handleTransferOnClose = () => setOpenTransferModal(false);
@@ -69,7 +69,7 @@ const DomainCard = ({ domainName, tld, image }) => {
               <button className="bg-gray-400 text-sm p-1 rounded-md font-bold mt-1">
                 <a
                   target="_blank"
-                  href={"https://blockscout.chiadochain.net/address/" + tldAddress}
+                  href={'https://testnet.patexscan.io/address/' + tldAddress}
                 >
                   Contract Address: {formatCard(tldAddress)}...
                 </a>

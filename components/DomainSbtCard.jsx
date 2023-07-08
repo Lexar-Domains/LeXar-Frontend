@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import UpdateMetadata from "./modals/UpdateMetadata";
+import { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import UpdateMetadata from './modals/UpdateMetadata';
 
 // const image =
 //   "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8&w=1000&q=80";
 
 // const title = "Yellow";
 
-const tldAddress = "08484888484848484";
+const tldAddress = '08484888484848484';
 
 const DomainSbtCard = ({ domainName, tld, image }) => {
   const [openMintModal, setOpenMintModal] = useState(false);
@@ -41,7 +41,7 @@ const DomainSbtCard = ({ domainName, tld, image }) => {
               <button className="bg-gray-400 text-sm p-1 rounded-md font-bold mt-1">
                 <a
                   target="_blank"
-                  href={"https://blockscout.chiadochain.net/address/" + tldAddress}
+                  href={'https://testnet.patexscan.io/address/' + tldAddress}
                 >
                   Contract Address: 0xda6b3...
                 </a>

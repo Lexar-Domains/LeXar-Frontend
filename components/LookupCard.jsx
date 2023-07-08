@@ -50,7 +50,7 @@ const LookupCard = ({ ownerAddress, contractAddress, tokenId }) => {
           <button className="text-sm bg-purple-600 font-bold rounded-lg p-2 ">
             <a
               target="_blank"
-              href={'https://testnet.patexscan.io/tx/' + factoryAddress}
+              href={'https://testnet.patexscan.io/address/' + factoryAddress}
             >
               View on Patex(Sepolia)
             </a>

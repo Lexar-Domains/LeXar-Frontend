@@ -11,8 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const MinterHeader = () => {
   const { address, isConnected } = useAccount();
   const [userDomain, setUserDomain] = useState('');
-  const [selectTld, setSelectTld] = useState('.xar');
-  const [selectTldPrice, setSelectTldPrice] = useState('0.003');
+  const [selectTld, setSelectTld] = useState('.lexar');
+  const [selectTldPrice, setSelectTldPrice] = useState('0.004');
   const [domainFactory, setDomainFactory] = useState('');
   const [tlds, setTlds] = useState();
   const [domainHash, setDomainHash] = useState('');
@@ -185,7 +185,7 @@ const MinterHeader = () => {
         </div>
 
         <p className="text-white font-bold text-center mb-4">
-          Domain Price: {selectTldPrice} xDAI
+          Domain Price: {selectTldPrice} ETH
         </p>
 
         <ConfirmationModal
