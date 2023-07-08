@@ -1,5 +1,5 @@
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { Dialog, Transition } from '@headlessui/react';
+import { Fragment, useState } from 'react';
 
 const MintedModal = ({ txHash, openMintModal, handleOnClose }) => {
   return (
@@ -45,7 +45,7 @@ const MintedModal = ({ txHash, openMintModal, handleOnClose }) => {
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
                       You can now proceed to verify your Domain transaction on
-                      the Gnosis Block Explorer.
+                      the Patex Sepolia Block Explorer.
                       <br /> <br />
                     </p>
                   </div>
@@ -58,9 +58,9 @@ const MintedModal = ({ txHash, openMintModal, handleOnClose }) => {
                     >
                       <a
                         target="_blank"
-                        href={"https://blockscout.chiadochain.net/tx/" + txHash}
+                        href={'https://testnet.patexscan.io/tx/' + txHash}
                       >
-                        Confirm on Gnosis (Chiado)
+                        Confirm on Patex Sepolia
                       </a>
                     </button>
                     &nbsp;&nbsp;&nbsp;

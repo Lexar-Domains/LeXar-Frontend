@@ -131,7 +131,7 @@ const CreateSbtModal = ({ visible, onClose }) => {
                     <input
                       type="text"
                       className="border  text-sm border-secondary-white p-2 rounded mb-5 bg-secondary-white text-gray-600 placeholder-gray-500 font-bold"
-                      placeholder="Add domain name (i.e '.gnosis')"
+                      placeholder="Add domain name (i.e '.patex')"
                       required
                       onChange={(e) => setDomainName(e.target.value)}
                     />

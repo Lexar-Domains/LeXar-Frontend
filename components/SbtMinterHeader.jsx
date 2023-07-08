@@ -30,7 +30,7 @@ const SbtMinter = () => {
 
   const getTldPrice = async (tld) => {
     const provider = new ethers.providers.JsonRpcProvider(
-      'https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado'
+      'https://test-rpc.patex.io/'
     );
 
     const tldAddress = await domainFactory.tldNamesAddresses(tld);
@@ -49,7 +49,7 @@ const SbtMinter = () => {
 
   const getTldDomains = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
-      'https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado'
+      'https://test-rpc.patex.io/'
     );
     // const signer = provider.getSigner();
 

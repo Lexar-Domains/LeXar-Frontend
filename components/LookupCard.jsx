@@ -16,11 +16,9 @@ const LookupCard = ({ ownerAddress, contractAddress, tokenId }) => {
           <button className="text-sm bg-purple-600 font-bold rounded-lg p-2">
             <a
               target="_blank"
-              href={
-                'https://blockscout.chiadochain.net/address/' + ownerAddress
-              }
+              href={'https://testnet.patexscan.io/address/' + ownerAddress}
             >
-              View on Gnosis(Chiado)
+              View on Patex(Sepolia)
             </a>
           </button>
           <AiOutlineCopy className="text-xl cursor-pointer" />
@@ -33,9 +31,9 @@ const LookupCard = ({ ownerAddress, contractAddress, tokenId }) => {
           <button className="text-sm bg-purple-600 font-bold rounded-lg p-2 mt-4">
             <a
               target="_blank"
-              href={'https://blockscout.chiadochain.net/address/' + contractAddress}
+              href={'https://testnet.patexscan.io/address/' + contractAddress}
             >
-              View on Gnosis(Chiado)
+              View on Patex(Sepolia)
             </a>
           </button>
           <AiOutlineCopy className="text-xl cursor-pointer" />
@@ -52,9 +50,9 @@ const LookupCard = ({ ownerAddress, contractAddress, tokenId }) => {
           <button className="text-sm bg-purple-600 font-bold rounded-lg p-2 ">
             <a
               target="_blank"
-              href={'https://blockscout.chiadochain.net/address/' + factoryAddress}
+              href={'https://testnet.patexscan.io/tx/' + factoryAddress}
             >
-              View on Gnosis(Chiado)
+              View on Patex(Sepolia)
             </a>
           </button>
           &nbsp;&nbsp;&nbsp;
