@@ -16,7 +16,7 @@ LeXar is designed to provide an intuitive, user-friendly interface that simplifi
 - Domain Resolver: https://testnet.patexscan.io/address/0xdcDF99A8FeC1102AdeA84c4087224Ef2d6BF8B27
 - Sbt Resolver: https://testnet.patexscan.io/address/0x86e284Ef6002A6f79fc6715303743d48cDB5cf73
 
- ### Gnosis Chiado Chain
+ ### Patex Network
    - **Testing and development environment**: The Gnosis Chiado testnet was a safe and cost-effective environment for testing and developing the smart contracts powering the LeXar Dapp.
    - **Community engagement and feedback**: We were able to engage with the developer community and gather valuable feedback. By making LeXar dApp accessible on the Patex testnet, we provided other developers and users with the opportunity to interact with LeXar, test its features, and provide suggestions for improvements.
 
