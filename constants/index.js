@@ -34,7 +34,7 @@ export const exploreWorlds = [
 
 export const startingFeatures = [
   'Choose the kind of domain you want to create (Non Transferable Domains (SBTs) or Transferable)',
-  'Add the custom domain name of your choice ( example ".tld", ".gnosis")',
+  'Add the custom domain name of your choice ( example ".tld", ".patex")',
   'Create your domain name that can be minted by community members',
 ];
 
@@ -58,7 +58,7 @@ export const insights = [
     imgUrl: '/planet-06.png',
     title: 'No Coding Required',
     subtitle:
-      "LeXar's intuitive interface allows users to create and manage dTLDs without any programming knowledge. Simply follow the step-by-step process to set up your custom domain on the Gnosis blockchain.",
+      "LeXar's intuitive interface allows users to create and manage dTLDs without any programming knowledge. Simply follow the step-by-step process to set up your custom domain on the Patex blockchain.",
   },
   {
     imgUrl: '/planet-07.png',
@@ -70,7 +70,7 @@ export const insights = [
     imgUrl: '/planet-07.png',
     title: 'Seamless Integration',
     subtitle:
-      'Lexar Domains empowers seamless integration of dTLDs with diverse decentralized applications and services on the Gnosis blockchain, fostering an interconnected ecosystem.',
+      'Lexar Domains empowers seamless integration of dTLDs with diverse decentralized applications and services on the Patex network, fostering an interconnected ecosystem.',
   },
   // {
   //   imgUrl: "/planet-08.png",
