@@ -2,7 +2,6 @@ import '@/styles/globals.css';
 import { darkTheme } from '@rainbow-me/rainbowkit';
 import { getDefaultWallets } from '@rainbow-me/rainbowkit';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { gnosisChiado } from '@wagmi/core/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import {
   RainbowKitProvider,
@@ -14,31 +13,36 @@ import merge from 'lodash.merge';
 
 // import { DomainContextProvider } from "@/context/context";
 
+const patexSepolia = {
+  id: 471100,
+  name: 'Patex Sepolia',
+  network: 'patex',
+  iconUrl: 'https://example.com/icon.svg',
+  iconBackground: '#fff',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Patex Sepolia Ether',
+    symbol: 'ETH',
+  },
+  rpcUrls: {
+    default: {
+      http: ['https://test-rpc.patex.io/'],
+    },
+  },
+  blockExplorers: {
+    default: { name: 'PatexScan', url: 'https://testnet.patexscan.io/' },
+  },
+  testnet: true,
+};
+
 const { provider, chains } = configureChains(
-  [gnosisChiado],
+  [patexSepolia],
   [
     jsonRpcProvider({
-      rpc: (chain) => ({
-        http: `https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado`,
-      }),
+      rpc: (chain) => ({ http: chain.rpcUrls.default.http[0] }),
     }),
   ]
 );
-
-// const connectors = connectorsForWallets([
-//   {
-//     groupName: 'Recommended',
-//     wallets: [
-//       BananaWallet({
-//         chains,
-//         connect: {
-//           networkId: 80001,
-//         },
-//       }),
-//       ...otherRainbowKitWallets,
-//     ],
-//   },
-// ]);
 
 const { connectors } = getDefaultWallets({
   appName: 'LeXar',

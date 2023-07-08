@@ -1,27 +1,27 @@
-import { useState, useEffect } from "react";
-import { useAccount } from "wagmi";
-import sbtFactoryAbi from "../abi/sbtFactoryAbi.json";
-import sbtDomainAbi from "../abi/sbtDomainAbi.json";
-import { ethers } from "ethers";
-import { config } from "../abi";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import ConfirmationModal from "@/components/ConfirmationModal";
+import { useState, useEffect } from 'react';
+import { useAccount } from 'wagmi';
+import sbtFactoryAbi from '../abi/sbtFactoryAbi.json';
+import sbtDomainAbi from '../abi/sbtDomainAbi.json';
+import { ethers } from 'ethers';
+import { config } from '../abi';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ConfirmationModal from '@/components/ConfirmationModal';
 
 const SbtMinter = () => {
   const { address, isConnected } = useAccount();
-  const [userDomain, setUserDomain] = useState("");
-  const [selectTld, setSelectTld] = useState(".sbt");
-  const [selectTldPrice, setSelectTldPrice] = useState("0.004");
-  const [domainFactory, setDomainFactory] = useState("");
+  const [userDomain, setUserDomain] = useState('');
+  const [selectTld, setSelectTld] = useState('.sbt');
+  const [selectTldPrice, setSelectTldPrice] = useState('0.004');
+  const [domainFactory, setDomainFactory] = useState('');
   const [tlds, setTlds] = useState();
   const [openMintModal, setOpenMintModal] = useState(false);
-  const [domainHash, setDomainHash] = useState("");
+  const [domainHash, setDomainHash] = useState('');
 
   const notify = (e) => {
     e.preventDefault();
 
-    toast.error("Please connect a Compatible Web3 Wallet", {
+    toast.error('Please connect a Compatible Web3 Wallet', {
       position: toast.POSITION.TOP_CENTER,
     });
   };
@@ -30,7 +30,7 @@ const SbtMinter = () => {
 
   const getTldPrice = async (tld) => {
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado"
+      'https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado'
     );
 
     const tldAddress = await domainFactory.tldNamesAddresses(tld);
@@ -49,7 +49,7 @@ const SbtMinter = () => {
 
   const getTldDomains = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado"
+      'https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado'
     );
     // const signer = provider.getSigner();
 
@@ -86,7 +86,7 @@ const SbtMinter = () => {
     const signer = provider.getSigner();
 
     const formatPrice = await ethers.utils.parseUnits(selectTldPrice, 18);
-    const formattedName = userDomain.replace(/\s+/g, "").toLowerCase().trim();
+    const formattedName = userDomain.replace(/\s+/g, '').toLowerCase().trim();
     const tldAddress = await domainFactory.tldNamesAddresses(selectTld);
 
     console.log(formattedName, tldAddress, formatPrice);
@@ -97,7 +97,7 @@ const SbtMinter = () => {
       signer
     );
 
-    const mintNotification = toast.loading("Please wait! Minting your NFT");
+    const mintNotification = toast.loading('Please wait! Minting your NFT');
 
     const mint = await domainContract.mint(formattedName, address, {
       value: formatPrice,
@@ -106,8 +106,8 @@ const SbtMinter = () => {
     console.log(receipt);
 
     toast.update(mintNotification, {
-      render: "Mint Completed Successfully",
-      type: "success",
+      render: 'Mint Completed Successfully',
+      type: 'success',
       isLoading: false,
       autoClose: 7000,
     });
@@ -153,7 +153,7 @@ const SbtMinter = () => {
                       {option}
                     </option>
                   ))
-                : "..."}
+                : '...'}
             </select>
           </div>
         </div>
